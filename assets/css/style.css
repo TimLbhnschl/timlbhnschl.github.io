@@ -18,19 +18,31 @@ body {
   }
 
   .language-toggle {
-    position: absolute; /* Macht den Button "absolut" im Header */
-    top: 10px; /* Abstand von oben */
-    right: 10px; /* Abstand von rechts */
-    padding: 8px 16px;
-    background-color: #555;
+    position: fixed;
+    top: 10px;     /* Abstand vom oberen Rand */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe mit etwas Transparenz */
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;  /* Damit der Button immer sichtbar ist */
   }
   
-  .language-toggle:hover {
-    background-color: #777;
+  .language-toggle a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+  }
+  
+  .language-toggle a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sprachumschalter unten */
+  footer .language-toggle {
+    top: auto;
+    bottom: 10px;   /* Abstand vom unteren Rand */
   }
   
   header nav ul li {
