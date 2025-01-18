@@ -1,22 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Header */
+header {
+    font-family: Arial, sans-serif; /* Schriftart für den Header */
   }
   
-  header {
-    background-color: white;
-    padding: 10px;
-    position: relative; /* Damit der Button relativ zum Header positioniert wird */
-  }
-  
-  header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-
+  /* Bereich für den Sprachumschalter (weiß) */
   .language-header {
     background-color: white; /* Weißer Hintergrund */
     padding: 10px 0; /* Etwas Abstand oben und unten */
@@ -79,28 +66,52 @@ body {
     color: lightgray; /* Textfarbe beim Hover */
   }
   
-  /* Sprachumschalter unten */
-  footer .language-toggle {
-    top: auto;
-    bottom: 10px;   /* Abstand vom unteren Rand */
-  }
-  
-  header nav ul li {
-    margin: 0 15px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
+  /* Hauptinhalt */
   main {
     padding: 20px;
   }
   
+  /* Footer */
   footer {
-    text-align: center;
+    background-color: #f1f1f1; /* Heller Hintergrund für den Footer */
     padding: 10px;
-    background-color: #333;
-    color: white;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  /* Allgemeine Layoutanpassungen */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Schriftart für den gesamten Body */
+    background-color: #f9f9f9; /* Heller Hintergrund für die gesamte Seite */
+    color: #333; /* Dunkelgraue Schriftfarbe */
+  }
+  
+  /* Links - Standard */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Links - Hover */
+  a:hover {
+    color: #007bff; /* Blaue Farbe für Links beim Hover */
+  }
+  
+  /* Responsives Design */
+  @media (max-width: 768px) {
+    nav ul li {
+      display: block; /* Navigationselemente untereinander bei kleinen Bildschirmen */
+      margin-bottom: 10px;
+    }
+  
+    .language-toggle {
+      padding: 8px 16px; /* Kleinere Buttons auf mobilen Geräten */
+      font-size: 14px; /* Kleinere Schrift auf mobilen Geräten */
+    }
   }
