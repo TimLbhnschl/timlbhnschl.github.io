@@ -8,16 +8,22 @@
 </head>
 <body>
 
-    {% include language-toggle.html %}
+  
 
   <header>
+    <div class="language-header">
+        <div class="language-toggle">
+          {% include language-toggle.html %}
+        </div>
+      </div>
+    
     <nav>
       <ul>
-        <li><a href="/">Startseite</a></li>
-        <li><a href="/westkapelle.html">Westkapelle</a></li>
-        <li><a href="/umgebung.html">Umgebung </a></li>
-        <li><a href="/einkaufenUndRestaurants.html">einkaufenUndUmgebung</a></li>
-        <li><a href="/kontaktUndReservierung.html">kontaktUndReservierung</a></li>
+        <li><a href="/{{ page.lang | default: 'de' }}/index.html">Startseite</a></li>
+        <li><a href="/{{ page.lang | default: 'de' }}/westkapelle.html">Westkapelle</a></li>
+        <li><a href="/{{ page.lang | default: 'de' }}/umgebung.html">Umgebung </a></li>
+        <li><a href="/{{ page.lang | default: 'de' }}/einkaufenUndRestaurants.html">einkaufenUndUmgebung</a></li>
+        <li><a href="/{{ page.lang | default: 'de' }}/kontaktUndReservierung.html">kontaktUndReservierung</a></li>
       </ul>
     </nav>
   </header>

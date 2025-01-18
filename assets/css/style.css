@@ -17,30 +17,29 @@ body {
     padding: 0;
   }
 
+  .language-header {
+    background-color: white; /* Weißer Hintergrund */
+    padding: 10px 0; /* Etwas Abstand oben und unten */
+    text-align: center; /* Den Sprachumschalter zentrieren */
+  }
+  
+  /* Sprachumschalter Button */
   .language-toggle {
     display: inline-block;
     padding: 10px 20px; /* Abstand um den Button */
     border: 2px solid gray; /* Graue Umrandung */
     border-radius: 30px; /* Ovaler Button */
-    position: relative;
     background-color: white; /* Weißer Hintergrund für den Button */
     font-size: 16px;
     color: gray;
     text-decoration: none;
     cursor: pointer;
     line-height: 20px;
-    margin: 0 auto; /* Zentriert den Button */
     font-weight: bold;
   }
   
-  .language-toggle a {
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-  }
-
   /* Strich in der Mitte des Buttons */
-.language-toggle::before {
+  .language-toggle::before {
     content: "|"; /* Der senkrechte Strich */
     position: absolute;
     top: 50%; /* In der Mitte des Buttons */
@@ -50,9 +49,34 @@ body {
     font-size: 20px; /* Größe des Strichs */
   }
   
-  .language-toggle a:hover {
-    background-color: lightgray; /* Hintergrundfarbe beim Hover */
-    color: white; /* Textfarbe beim Hover */
+  /* Bereich für die Navigation (grau) */
+  .navigation-header {
+    background-color: gray; /* Grauer Hintergrund für die Navigation */
+    padding: 10px 0; /* Etwas Abstand oben und unten */
+  }
+  
+  /* Navigation Links */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Navigation zentrieren */
+  }
+  
+  nav ul li {
+    display: inline-block; /* Inline-Elemente für die Tabs */
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white; /* Weißer Text für die Links */
+    text-decoration: none; /* Keine Unterstreichung */
+    font-size: 18px;
+  }
+  
+  /* Hover-Effekt für Navigation Links */
+  nav ul li a:hover {
+    color: lightgray; /* Textfarbe beim Hover */
   }
   
   /* Sprachumschalter unten */
