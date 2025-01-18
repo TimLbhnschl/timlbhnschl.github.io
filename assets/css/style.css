@@ -10,7 +10,7 @@ header {
     display: flex; /* Flexbox für bessere Layout-Kontrolle */
     justify-content: flex-end; /* Elemente nach rechts ausrichten */
     align-items: center; /* Vertikal zentrieren */
-    height: 50px; /* Feste Höhe für einen kleineren Bereich */
+    height: 35px; /* Feste Höhe für einen kleineren Bereich */
 }
 
 .language-toggle {
