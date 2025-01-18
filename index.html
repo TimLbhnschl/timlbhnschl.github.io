@@ -7,10 +7,10 @@
   <script>
     // Erkennung der bevorzugten Sprache
     const userLang = navigator.language || navigator.userLanguage;
-    if (userLang.startsWith('de')) {
-      window.location.href = '/de/index.html';
-    } else {
+    if (userLang.startsWith('nl')) {
       window.location.href = '/ne/index.html';
+    } else {
+      window.location.href = '/de/index.html';
     }
   </script>
 </head>
