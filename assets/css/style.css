@@ -7,32 +7,33 @@ header {
 .language-header {
     background-color: white; /* Weißer Hintergrund */
     padding: 5px 0; /* Etwas kleinerer Abstand oben und unten */
-    
+    display: flex; /* Flexbox für bessere Layout-Kontrolle */
     justify-content: flex-end; /* Elemente nach rechts ausrichten */
     align-items: center; /* Vertikal zentrieren */
-    height: 40px; /* Feste Höhe für einen kleineren Bereich */
+    height: 50px; /* Feste Höhe für einen kleineren Bereich */
 }
 
 /* Sprachumschalter Button */
 .language-toggle {
-    display: inline-block;
-    padding: 5px 15px; /* Reduzierter Abstand um den Button */
-    background-color: white; /* Weißer Hintergrund für den Button */
-    font-size: 16px; /* Schriftgröße */
-    color: gray; /* Textfarbe */
-    text-decoration: none; /* Keine Unterstreichung */
-    border: 2px solid gray; /* Graue Umrandung */
-    border-radius: 20px; /* Runde Form */
+    border: 2px solid #000; /* Schwarze Umrandung */
+    border-radius: 50%; /* Runde Ecken */
+    padding: 10px 15px; /* Etwas Abstand für den Button */
+    background-color: transparent; /* Transparenter Hintergrund */
+    color: #000; /* Schwarzer Text */
+    font-size: 14px; /* Schriftgröße */
     cursor: pointer; /* Mauszeiger als Hand */
-    font-weight: bold; /* Fettgedruckt */
-    text-align: center; /* Zentrierter Text */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Sanfter Übergang */
-}
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Weiche Übergänge */
+  }
 
-.language-toggle:hover {
-    background-color: lightgray; /* Hellgrauer Hintergrund beim Hover */
-    color: black; /* Schwarzer Text beim Hover */
-}
+  .language-toggle:hover {
+    background-color: #000; /* Dunkler Hintergrund bei Hover */
+    color: #fff; /* Weißer Text bei Hover */
+    border-color: #fff; /* Weiße Umrandung bei Hover */
+  }
+  
+  .language-toggle:focus {
+    outline: none; /* Entfernt den Standard-Fokusrahmen */
+  }
 
 /* Bereich für die Navigation (dunkelgrau) */
 nav {
@@ -106,11 +107,6 @@ a:hover {
 
 /* Responsives Design */
 @media (max-width: 768px) {
-    nav {
-        background-color: rgb(231, 0, 0); /* Dunkelgrauer Hintergrund */
-        padding: 20px 0; /* Weniger Abstand oben und unten */
-    }
-
     nav ul li {
         display: block; /* Navigationselemente untereinander bei kleinen Bildschirmen */
         margin-bottom: 10px;
