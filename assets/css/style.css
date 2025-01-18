@@ -18,10 +18,10 @@ body {
   }
 
   .language-toggle {
-    position: fixed;
+    position: absolut;
     top: 10px;     /* Abstand vom oberen Rand */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-5%);
     background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe mit etwas Transparenz */
     color: white;
     padding: 10px;
