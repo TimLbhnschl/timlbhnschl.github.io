@@ -25,16 +25,7 @@ header {
     font-weight: bold;
   }
   
-  /* Strich in der Mitte des Buttons */
-  .language-toggle::before {
-    content: "|"; /* Der senkrechte Strich */
-    position: absolute;
-    top: 50%; /* In der Mitte des Buttons */
-    left: 50%; /* In der Mitte des Buttons */
-    transform: translate(-50%, -50%); /* Zentriert den Strich */
-    color: gray; /* Strich in grauer Farbe */
-    font-size: 20px; /* Größe des Strichs */
-  }
+
   
   /* Bereich für die Navigation (grau) */
   .navigation-header {
