@@ -71,7 +71,7 @@ nav ul li a:hover {
 /* Das Bild soll sich über die gesamte Breite und Höhe erstrecken */
 .full-width-image {
     width: 100%;
-    height: 100vh; /* 100% der Viewport-Höhe */
+    height: 50vh; /* 100% der Viewport-Höhe */
     object-fit: cover; /* Damit das Bild die Fläche füllt, ohne das Seitenverhältnis zu verzerren */
 }
 
