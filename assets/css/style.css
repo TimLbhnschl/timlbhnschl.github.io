@@ -5,7 +5,7 @@ body {
   }
   
   header {
-    background-color: #333;
+    background-color: white;
     padding: 10px;
     position: relative; /* Damit der Button relativ zum Header positioniert wird */
   }
@@ -18,15 +18,19 @@ body {
   }
 
   .language-toggle {
-    position: absolut;
-    top: 10px;     /* Abstand vom oberen Rand */
-    left: 50%;
-    transform: translateX(-5%);
-    background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe mit etwas Transparenz */
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1000;  /* Damit der Button immer sichtbar ist */
+    display: inline-block;
+    padding: 10px 20px; /* Abstand um den Button */
+    border: 2px solid gray; /* Graue Umrandung */
+    border-radius: 30px; /* Ovaler Button */
+    position: relative;
+    background-color: white; /* Weißer Hintergrund für den Button */
+    font-size: 16px;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 20px;
+    margin: 0 auto; /* Zentriert den Button */
+    font-weight: bold;
   }
   
   .language-toggle a {
@@ -34,9 +38,21 @@ body {
     color: white;
     margin: 0 10px;
   }
+
+  /* Strich in der Mitte des Buttons */
+.language-toggle::before {
+    content: "|"; /* Der senkrechte Strich */
+    position: absolute;
+    top: 50%; /* In der Mitte des Buttons */
+    left: 50%; /* In der Mitte des Buttons */
+    transform: translate(-50%, -50%); /* Zentriert den Strich */
+    color: gray; /* Strich in grauer Farbe */
+    font-size: 20px; /* Größe des Strichs */
+  }
   
   .language-toggle a:hover {
-    text-decoration: underline;
+    background-color: lightgray; /* Hintergrundfarbe beim Hover */
+    color: white; /* Textfarbe beim Hover */
   }
   
   /* Sprachumschalter unten */
