@@ -20,18 +20,18 @@ header {
     font-size: 16px;
   }
   
-  .language-toggle a {
-    text-decoration: none;
-    color: #000;
-    display: flex;
-    align-items: center;
-  }
-  
-  .language-toggle img {
-    width: 24px;
-    height: 16px;
-    margin-right: 5px;
-  }
+.language-toggle a {
+text-decoration: none;
+color: #000;
+display: flex;
+align-items: center;
+}
+
+.language-toggle img {
+width: 24px;
+height: 16px;
+margin-right: 5px;
+}
 
 
 /* Bereich für die Navigation (dunkelgrau) */
