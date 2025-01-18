@@ -76,7 +76,7 @@ main {
 footer {
     background-color: #f1f1f1; /* Heller Hintergrund für den Footer */
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 footer p {
