@@ -29,7 +29,7 @@ header {
   
   /* Bereich für die Navigation (grau) */
   .navigation-header {
-    background-color: gray; /* Grauer Hintergrund für die Navigation */
+    background-color: rgb(71, 71, 71); /* Grauer Hintergrund für die Navigation */
     padding: 10px 0; /* Etwas Abstand oben und unten */
   }
   
