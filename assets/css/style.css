@@ -38,6 +38,7 @@ margin-right: 5px;
 nav {
     background-color: rgb(66, 64, 64); /* Dunkelgrauer Hintergrund */
     padding: 20px 0; /* Weniger Abstand oben und unten */
+    z-index: 1000;
 }
 
 /* Navigation Tabs */
