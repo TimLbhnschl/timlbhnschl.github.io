@@ -1,0 +1,62 @@
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="C:\Users\tim\Documents\GitHub\TimLiebehenschel.github.io\assets\images\slide1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="C:\Users\tim\Documents\GitHub\TimLiebehenschel.github.io\assets\images\slide2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="C:\Users\tim\Documents\GitHub\TimLiebehenschel.github.io\assets\images\slide3.jpg" style="width:100%">
+    </div>
+  </div>
+  
+  <style>
+  /* Füge das Stylesheet für die Slideshow hinzu */
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  /* Fade-Effekt für den Übergang */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  </style>
+  
+  <script>
+  // Füge das JavaScript für das automatische Durchblättern der Bilder hinzu
+  let slideIndex = 0;
+  
+  function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Wechselt das Bild alle 2 Sekunden
+  }
+  
+  showSlides();
+  </script>
+  
