@@ -35,13 +35,13 @@ header {
 }
 
 /* Bereich für die Navigation (dunkelgrau) */
-.navigation-header {
+nav {
     background-color: rgb(66, 64, 64); /* Dunkelgrauer Hintergrund */
     padding: 20px 0; /* Weniger Abstand oben und unten */
 }
 
 /* Navigation Tabs */
-.navigation-header ul {
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none; /* Keine Aufzählungszeichen */
@@ -51,11 +51,11 @@ header {
 }
 
 /* Abstände und Schriftgröße der Tabs */
-.navigation-header ul li {
+nav ul li {
     margin-right: 20px; /* Abstand zwischen den Tabs */
 }
 
-.navigation-header ul li a {
+nav ul li a {
     color: white; /* Weiße Schrift */
     font-size: 22px; /* Größere Schrift */
     text-decoration: none; /* Keine Unterstreichung */
@@ -63,7 +63,7 @@ header {
     transition: color 0.3s ease; /* Sanfter Farbwechsel beim Hover */
 }
 
-.navigation-header ul li a:hover {
+nav ul li a:hover {
     color: lightgray; /* Hellgraue Schrift beim Hover */
 }
 
