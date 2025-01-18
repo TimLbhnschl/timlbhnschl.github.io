@@ -1,128 +1,118 @@
 /* Header */
 header {
     font-family: Arial, sans-serif; /* Schriftart für den Header */
-  }
-  
-  /* Bereich für den Sprachumschalter (weiß) */
-  .language-header {
-    background-color: white; /* Weißer Hintergrund */
-    padding: 5px 0; /* Etwas Abstand oben und unten */
-    text-align: center; /* Den Sprachumschalter zentrieren */
-  }
-  
-  /* Sprachumschalter Button */
-  .language-toggle {
-    display: inline-block;
-    padding: 10px 20px; /* Abstand um den Button */
-    background-color: white; /* Weißer Hintergrund für den Button */
-    font-size: 16px;
-    color: gray;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 20px;
-    font-weight: bold;
-  }
-  
+}
 
-  
-  /* Bereich für die Navigation (grau) */
-  .navigation-header {
-    background-color: rgb(66, 64, 64); /* Hintergrundfarbe */
-    padding: 40px 0; /* Abstand oben und unten */
-  }
-  
-  .navigation-header ul {
+/* Bereich für den Sprachumschalter (weiß) */
+.language-header {
+    background-color: white; /* Weißer Hintergrund */
+    padding: 5px 0; /* Etwas kleinerer Abstand oben und unten */
+    display: flex; /* Flexbox für bessere Layout-Kontrolle */
+    justify-content: flex-end; /* Elemente nach rechts ausrichten */
+    align-items: center; /* Vertikal zentrieren */
+    height: 50px; /* Feste Höhe für einen kleineren Bereich */
+}
+
+/* Sprachumschalter Button */
+.language-toggle {
+    display: inline-block;
+    padding: 5px 15px; /* Reduzierter Abstand um den Button */
+    background-color: white; /* Weißer Hintergrund für den Button */
+    font-size: 16px; /* Schriftgröße */
+    color: gray; /* Textfarbe */
+    text-decoration: none; /* Keine Unterstreichung */
+    border: 2px solid gray; /* Graue Umrandung */
+    border-radius: 20px; /* Runde Form */
+    cursor: pointer; /* Mauszeiger als Hand */
+    font-weight: bold; /* Fettgedruckt */
+    text-align: center; /* Zentrierter Text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Sanfter Übergang */
+}
+
+.language-toggle:hover {
+    background-color: lightgray; /* Hellgrauer Hintergrund beim Hover */
+    color: black; /* Schwarzer Text beim Hover */
+}
+
+/* Bereich für die Navigation (dunkelgrau) */
+.navigation-header {
+    background-color: rgb(66, 64, 64); /* Dunkelgrauer Hintergrund */
+    padding: 20px 0; /* Weniger Abstand oben und unten */
+}
+
+/* Navigation Tabs */
+.navigation-header ul {
     margin: 0;
     padding: 0;
     list-style: none; /* Keine Aufzählungszeichen */
-    display: flex; /* Elemente in einer Zeile */
+    display: flex; /* Tabs in einer Zeile */
     justify-content: center; /* Zentriert die Tabs horizontal */
-  }
-  
-  .navigation-header ul li {
+    align-items: center; /* Zentriert die Tabs vertikal */
+}
+
+/* Abstände und Schriftgröße der Tabs */
+.navigation-header ul li {
     margin-right: 20px; /* Abstand zwischen den Tabs */
-  }
-  
-  .navigation-header ul li a {
-    color: white;
-    font-size: 26px;
-    text-decoration: none;
-  }
-  
-  .navigation-header ul li a:hover {
-    color: lightgray; /* Hover-Effekt */
-  }
-  
-  /* Navigation Links */
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Navigation zentrieren */
-  }
-  
-  nav ul li {
-    display: inline-block; /* Inline-Elemente für die Tabs */
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: white; /* Weißer Text für die Links */
+}
+
+.navigation-header ul li a {
+    color: white; /* Weiße Schrift */
+    font-size: 22px; /* Größere Schrift */
     text-decoration: none; /* Keine Unterstreichung */
-    font-size: 18px;
-  }
-  
-  /* Hover-Effekt für Navigation Links */
-  nav ul li a:hover {
-    color: lightgray; /* Textfarbe beim Hover */
-  }
-  
-  /* Hauptinhalt */
-  main {
+    padding: 5px 10px; /* Innenabstand für größere Klickfläche */
+    transition: color 0.3s ease; /* Sanfter Farbwechsel beim Hover */
+}
+
+.navigation-header ul li a:hover {
+    color: lightgray; /* Hellgraue Schrift beim Hover */
+}
+
+/* Hauptinhalt */
+main {
     padding: 20px;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: #f1f1f1; /* Heller Hintergrund für den Footer */
     padding: 10px;
     text-align: center;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 0;
     font-size: 14px;
     color: gray;
-  }
-  
-  /* Allgemeine Layoutanpassungen */
-  body {
+}
+
+/* Allgemeine Layoutanpassungen */
+body {
     margin: 0;
     font-family: Arial, sans-serif; /* Schriftart für den gesamten Body */
     background-color: #f9f9f9; /* Heller Hintergrund für die gesamte Seite */
     color: #333; /* Dunkelgraue Schriftfarbe */
-  }
-  
-  /* Links - Standard */
-  a {
+}
+
+/* Links - Standard */
+a {
     text-decoration: none;
     color: inherit;
-  }
-  
-  /* Links - Hover */
-  a:hover {
+}
+
+/* Links - Hover */
+a:hover {
     color: #007bff; /* Blaue Farbe für Links beim Hover */
-  }
-  
-  /* Responsives Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
     nav ul li {
-      display: block; /* Navigationselemente untereinander bei kleinen Bildschirmen */
-      margin-bottom: 10px;
+        display: block; /* Navigationselemente untereinander bei kleinen Bildschirmen */
+        margin-bottom: 10px;
     }
-  
+
     .language-toggle {
-      padding: 8px 16px; /* Kleinere Buttons auf mobilen Geräten */
-      font-size: 14px; /* Kleinere Schrift auf mobilen Geräten */
+        padding: 8px 16px; /* Kleinere Buttons auf mobilen Geräten */
+        font-size: 14px; /* Kleinere Schrift auf mobilen Geräten */
     }
-  }
+}
