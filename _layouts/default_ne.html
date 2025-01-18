@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  
+
+  <header>
+    <div class="language-header">
+        <div class="language-toggle">
+          {% include language-toggle.html %}
+        </div>
+      </div>
+    
+    <nav>
+      <ul>
+        <li><a href="/{{ page.lang | default: 'de' }}/index.html">StartseiteNE</a></li>
+        <li><a href="/{{ page.lang | default: 'de' }}/westkapelle.html">WestkapelleNE</a></li>
+        <li><a href="/{{ page.lang | default: 'de' }}/umgebung.html">Umgebung </a></li>
+        <li><a href="/{{ page.lang | default: 'de' }}/einkaufenUndRestaurants.html">einkaufenUndUmgebung</a></li>
+        <li><a href="/{{ page.lang | default: 'de' }}/kontaktUndReservierung.html">kontaktUndReservierung</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>Impressum</p>
+  </footer>
+</body>
+</html>
