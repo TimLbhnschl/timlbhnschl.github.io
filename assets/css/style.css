@@ -21,8 +21,8 @@ header {
     font-size: 16px; /* Schriftgröße */
     color: gray; /* Textfarbe */
     text-decoration: none; /* Keine Unterstreichung */
+    border: 2px solid gray; /* Graue Umrandung */
     
-    border-radius: 20px; /* Runde Form */
     cursor: pointer; /* Mauszeiger als Hand */
     font-weight: bold; /* Fettgedruckt */
     text-align: center; /* Zentrierter Text */
