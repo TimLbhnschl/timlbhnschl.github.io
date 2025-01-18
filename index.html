@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Erkennung der bevorzugten Sprache
+    const userLang = navigator.language || navigator.userLanguage;
+    if (userLang.startsWith('de')) {
+      window.location.href = '/de/index.html';
+    } else {
+      window.location.href = '/ne/index.html';
+    }
+  </script>
+</head>
+<body>
+  <p>Wenn Sie nicht automatisch weitergeleitet werden, wählen Sie Ihre Sprache:</p>
+  <ul>
+    <li><a href="/de/index.html">Deutsch</a></li>
+    <li><a href="/ne/index.html">Niederländisch</a></li>
+  </ul>
+</body>
+</html>
