@@ -7,10 +7,10 @@ header {
 .language-header {
     background-color: white; /* Weißer Hintergrund */
     padding: 5px 0; /* Etwas kleinerer Abstand oben und unten */
-    display: flex; /* Flexbox für bessere Layout-Kontrolle */
+    
     justify-content: flex-end; /* Elemente nach rechts ausrichten */
     align-items: center; /* Vertikal zentrieren */
-    height: 50px; /* Feste Höhe für einen kleineren Bereich */
+    height: 40px; /* Feste Höhe für einen kleineren Bereich */
 }
 
 /* Sprachumschalter Button */
@@ -22,7 +22,7 @@ header {
     color: gray; /* Textfarbe */
     text-decoration: none; /* Keine Unterstreichung */
     border: 2px solid gray; /* Graue Umrandung */
-    
+    border-radius: 20px; /* Runde Form */
     cursor: pointer; /* Mauszeiger als Hand */
     font-weight: bold; /* Fettgedruckt */
     text-align: center; /* Zentrierter Text */
