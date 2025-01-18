@@ -6,16 +6,27 @@ header {
   /* Bereich für den Sprachumschalter (weiß) */
   .language-header {
     background-color: white; /* Weißer Hintergrund */
-    padding: 20px 0; /* Abstand oben und unten */
-    border-bottom: 2px solid lightgray; /* Optional: Eine Linie darunter */
+    padding: 10px 0; /* Etwas Abstand oben und unten */
+    text-align: center; /* Den Sprachumschalter zentrieren */
   }
   
+  /* Sprachumschalter Button */
   .language-toggle {
-    padding: 10px 20px;
-    border-radius: 30px;
+    display: inline-block;
+    padding: 10px 20px; /* Abstand um den Button */
+    border: 2px solid gray; /* Graue Umrandung */
+    background-color: white; /* Weißer Hintergrund für den Button */
     font-size: 16px;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 20px;
+    font-weight: bold;
   }
   
+
+  
+  /* Bereich für die Navigation (grau) */
   .navigation-header {
     background-color: gray; /* Hintergrundfarbe */
     padding: 20px 0; /* Abstand oben und unten */
@@ -42,7 +53,30 @@ header {
   .navigation-header ul li a:hover {
     color: lightgray; /* Hover-Effekt */
   }
-
+  
+  /* Navigation Links */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Navigation zentrieren */
+  }
+  
+  nav ul li {
+    display: inline-block; /* Inline-Elemente für die Tabs */
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white; /* Weißer Text für die Links */
+    text-decoration: none; /* Keine Unterstreichung */
+    font-size: 18px;
+  }
+  
+  /* Hover-Effekt für Navigation Links */
+  nav ul li a:hover {
+    color: lightgray; /* Textfarbe beim Hover */
+  }
   
   /* Hauptinhalt */
   main {
