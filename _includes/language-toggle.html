@@ -1,3 +1,13 @@
 <div class="language-toggle">
-    <a href="/de/">DE</a> | <a href="/en/">EN</a>
-  </div>
+  {% if page.lang == "de" %}
+  <a href="/en/{{ page.url | remove: '/de/' }}">
+    <img src="/assets/images/Flag_of_the_Netherlands.png" alt="English Flag">
+    EN
+  </a>
+{% elsif page.lang == "en" %}
+  <a href="/de/{{ page.url | remove: '/en/' }}">
+    <img src="/assets/images/Flag_of_Germany.svg.png" alt="German Flag">
+    DE
+  </a>
+{% endif %}
+</div>

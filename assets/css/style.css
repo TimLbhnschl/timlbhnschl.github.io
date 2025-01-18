@@ -13,26 +13,26 @@ header {
     height: 50px; /* Feste Höhe für einen kleineren Bereich */
 }
 
-/* Sprachumschalter Button */
 .language-toggle {
-    display: inline-block;
-    padding: 5px 15px; /* Reduzierter Abstand um den Button */
-    background-color: white; /* Weißer Hintergrund für den Button */
-    font-size: 16px; /* Schriftgröße */
-    color: gray; /* Textfarbe */
-    text-decoration: none; /* Keine Unterstreichung */
-    border: 2px solid gray; /* Graue Umrandung */
-    border-radius: 20px; /* Runde Form */
-    cursor: pointer; /* Mauszeiger als Hand */
-    font-weight: bold; /* Fettgedruckt */
-    text-align: center; /* Zentrierter Text */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Sanfter Übergang */
-}
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+  }
+  
+  .language-toggle a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-toggle img {
+    width: 24px;
+    height: 16px;
+    margin-right: 5px;
+  }
 
-.language-toggle:hover {
-    background-color: lightgray; /* Hellgrauer Hintergrund beim Hover */
-    color: black; /* Schwarzer Text beim Hover */
-}
 
 /* Bereich für die Navigation (dunkelgrau) */
 nav {
