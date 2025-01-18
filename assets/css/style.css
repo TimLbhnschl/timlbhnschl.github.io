@@ -6,56 +6,43 @@ header {
   /* Bereich für den Sprachumschalter (weiß) */
   .language-header {
     background-color: white; /* Weißer Hintergrund */
-    padding: 10px 0; /* Etwas Abstand oben und unten */
-    text-align: center; /* Den Sprachumschalter zentrieren */
+    padding: 20px 0; /* Abstand oben und unten */
+    border-bottom: 2px solid lightgray; /* Optional: Eine Linie darunter */
   }
   
-  /* Sprachumschalter Button */
   .language-toggle {
-    display: inline-block;
-    padding: 10px 20px; /* Abstand um den Button */
-    border: 2px solid gray; /* Graue Umrandung */
-    border-radius: 30px; /* Ovaler Button */
-    background-color: white; /* Weißer Hintergrund für den Button */
+    padding: 10px 20px;
+    border-radius: 30px;
     font-size: 16px;
-    color: gray;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 20px;
-    font-weight: bold;
   }
   
-
-  
-  /* Bereich für die Navigation (grau) */
   .navigation-header {
-    background-color: rgb(71, 71, 71); /* Grauer Hintergrund für die Navigation */
-    padding: 10px 0; /* Etwas Abstand oben und unten */
+    background-color: gray; /* Hintergrundfarbe */
+    padding: 20px 0; /* Abstand oben und unten */
   }
   
-  /* Navigation Links */
-  nav ul {
-    list-style-type: none;
+  .navigation-header ul {
     margin: 0;
     padding: 0;
-    text-align: center; /* Navigation zentrieren */
+    list-style: none; /* Keine Aufzählungszeichen */
+    display: flex; /* Elemente in einer Zeile */
+    justify-content: center; /* Zentriert die Tabs horizontal */
   }
   
-  nav ul li {
-    display: inline-block; /* Inline-Elemente für die Tabs */
-    margin-right: 20px;
+  .navigation-header ul li {
+    margin-right: 20px; /* Abstand zwischen den Tabs */
   }
   
-  nav ul li a {
-    color: white; /* Weißer Text für die Links */
-    text-decoration: none; /* Keine Unterstreichung */
+  .navigation-header ul li a {
+    color: white;
     font-size: 18px;
+    text-decoration: none;
   }
   
-  /* Hover-Effekt für Navigation Links */
-  nav ul li a:hover {
-    color: lightgray; /* Textfarbe beim Hover */
+  .navigation-header ul li a:hover {
+    color: lightgray; /* Hover-Effekt */
   }
+
   
   /* Hauptinhalt */
   main {
