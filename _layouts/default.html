@@ -19,11 +19,31 @@
     
     <nav>
       <ul>
-        <li><a href="/{{ page.lang | default: 'de' }}/index.html">Startseite</a></li>
-        <li><a href="/{{ page.lang | default: 'de' }}/westkapelle.html">Westkapelle</a></li>
-        <li><a href="/{{ page.lang | default: 'de' }}/umgebung.html">Umgebung </a></li>
-        <li><a href="/{{ page.lang | default: 'de' }}/einkaufenUndRestaurants.html">einkaufenUndUmgebung</a></li>
-        <li><a href="/{{ page.lang | default: 'de' }}/kontaktUndReservierung.html">kontaktUndReservierung</a></li>
+        <li>
+          <a href="/{{ page.lang | default: 'de' }}/index.html">
+            {{ site.data.translations[page.lang].startseite }}
+          </a>
+        </li>
+        <li>
+          <a href="/{{ page.lang | default: 'de' }}/westkapelle.html">
+            {{ site.data.translations[page.lang].westkapelle }}
+          </a>
+        </li>
+        <li>
+          <a href="/{{ page.lang | default: 'de' }}/umgebung.html">
+            {{ site.data.translations[page.lang].umgebung }}
+          </a>
+        </li>
+        <li>
+          <a href="/{{ page.lang | default: 'de' }}/einkaufenUndRestaurants.html">
+            {{ site.data.translations[page.lang].einkaufenUndRestaurants }}
+          </a>
+        </li>
+        <li>
+          <a href="/{{ page.lang | default: 'de' }}/kontaktUndReservierung.html">
+            {{ site.data.translations[page.lang].kontaktUndReservierung }}
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
