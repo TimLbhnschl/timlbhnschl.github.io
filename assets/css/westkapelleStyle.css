@@ -1,13 +1,13 @@
 .container-grid {
     display: grid;
-    grid-template-columns: auto 1fr; /* Bild nimmt automatische Breite, Text füllt Rest */
+    
     align-items: center; /* Zentriert Bild und Text vertikal */
     gap: 20px; /* Abstand zwischen Bild und Text */
 }
 
 .image {
-    width: 500px;
-    height: auto; /* Erhält das Seitenverhältnis */
+    width: 834px;
+    height: 1113px;
 }
 
 .text {
