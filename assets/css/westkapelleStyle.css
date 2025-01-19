@@ -1,0 +1,16 @@
+.container-grid {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Bild nimmt automatische Breite, Text füllt Rest */
+    align-items: center; /* Zentriert Bild und Text vertikal */
+    gap: 20px; /* Abstand zwischen Bild und Text */
+}
+
+.image {
+    max-width: 150px; /* Setzt eine maximale Breite für das Bild */
+    height: auto; /* Erhält das Seitenverhältnis */
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+}
