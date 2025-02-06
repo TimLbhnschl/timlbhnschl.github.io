@@ -1,16 +1,10 @@
-.container-grid {
-    display: grid;
-    
-    align-items: center; /* Zentriert Bild und Text vertikal */
+.container {
+    display: flex;
+    align-items: center; /* Bild und Text vertikal ausrichten */
     gap: 20px; /* Abstand zwischen Bild und Text */
 }
 
-.image {
-    width: 100;
-    height: 100;
-}
-
-.text {
-    font-size: 16px;
-    line-height: 1.5;
+.container img {
+    width: 150px; /* Größe des Bildes anpassen */
+    height: auto;
 }
